@@ -2,6 +2,16 @@
 
 Runtime hinting for AngularJS.
 
+## Building
+
+```shell
+$ rm -r node_modules && npm install
+```
+
+```shell
+$ npm run build
+```
+
 ## Usage
 
 Add `<script src="hint.js"></script>` to your app's `index.html` immediately after the
@@ -41,14 +51,7 @@ Example:
 ```html
 <!doctype html>
 <html ng-app="sample" ng-hint-exclude="modules">
-  ...
-  <script src="../../node_modules/angular/angular.js"></script>
-  <script src="../../dist/hint.js"></script>
-  ...
-</html>
-```
-
-## Building
+  ...## Building
 
 ```shell
 $ npm install
@@ -56,7 +59,14 @@ $ npm install
 
 ```shell
 $ npm run build
+``
+  <script src="../../node_modules/angular/angular.js"></script>
+  <script src="../../dist/hint.js"></script>
+  ...
+</html>
 ```
+
+
 ##Example
   In the `example` directory, you can find a sample application that appears
   superficially correct but violates many Angular best practices. When AngularHint is in operation
